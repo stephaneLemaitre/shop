@@ -1,0 +1,15 @@
+.container {
+  margin: 50px auto;
+  max-width: $container-width;
+  width: 100%;
+  position: relative;
+}
+
+ul {
+  li {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
