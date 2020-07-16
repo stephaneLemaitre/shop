@@ -15,10 +15,11 @@
     &-content {
         max-height: 75%;
         max-width: 500px;
-        width: 90%;
+        width: 87%;
         overflow-y: auto;
         background-color: #FFFFFF;
         padding: 30px 15px;
+        position: relative;
         box-shadow: -1px 0px 15px 2px rgba(133,128,133,1);
     }
     &-visible {

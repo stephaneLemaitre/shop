@@ -7,7 +7,7 @@ function Panel(props) {
     useEffect(() => {
         setVisibility(props.visible);
         setContent(props.data)
-    }, [props.data]);
+    }, [props.data, props.visible]);
 
     const updateItem = (index) => {
         let newItems = data.map(item => {
@@ -20,9 +20,14 @@ function Panel(props) {
         setContent(newItems)
     }
 
+    const closePanel = () => {
+        setVisibility(false);
+    }
+
     return (
         <div className={`panel ${visible ? "panel-visible" : ""}`}>
             <div className="panel-content">
+                <span className="icon-cross" onClick={() => closePanel()}/>
                 <div className="accordion">
                     {
                         (data || []).map((item, i) => {

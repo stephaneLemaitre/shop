@@ -9,32 +9,32 @@
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 5px 10px;
-    background-color: #eae5e5;
-    border: 1px solid darken(#eae5e5, 20%);
+    background-color: $secondary-color;
+    border: 1px solid darken($secondary-color, 20%);
     font-weight: bold;
     cursor: pointer;
   }
   &-content {
     padding: 15px;
     display: none;
-    border: 1px solid darken(#eae5e5, 20%);
+    border: 1px solid darken($secondary-color, 20%);
   }
   &-expanded {
     .accordion-header {
-      background-color: darken(#eae5e5, 20%);
+      background-color: darken($secondary-color, 20%);
     }
     .accordion-content {
       display: flex;
       .accordion {
         .accordion-header {
-          background-color: #eae5e5;
+          background-color: $secondary-color;
         }
         .accordion-content {
           display: none;
         }
         .accordion-expanded {
           .accordion-header {
-            background-color: darken(#eae5e5, 20%);
+            background-color: darken($secondary-color, 20%);
           }
           .accordion-content {
             display: flex;

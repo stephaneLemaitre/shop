@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it match snapshot 1`] = `
+<div
+  className="panel "
+>
+  <div
+    className="panel-content"
+  >
+    <span
+      className="icon-cross"
+      onClick={[Function]}
+    />
+    <div
+      className="accordion"
+    />
+  </div>
+</div>
+`;

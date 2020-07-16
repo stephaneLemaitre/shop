@@ -13,7 +13,6 @@ function App() {
                     isExpanded: false
                 }
             });
-            console.log(newCategories);
             setCategories(newCategories)
         })
     }, []);
